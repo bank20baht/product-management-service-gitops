@@ -7,11 +7,11 @@ spec:
   project: default
   source:
     repoURL: https://github.com/bank20baht/product-management-service-gitops
-    path: apps/product-management-api
+    path: app/product-management-api
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
-    namespace: frontend
+    namespace: backend
   syncPolicy:
     automated:
       prune: true

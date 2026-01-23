@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/microfrontend101/angular-nf-gitops.git
-    path: apps/product-management-api
+    repoURL: https://github.com/bank20baht/product-management-service-gitops
+    path: app/product-management-api
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
