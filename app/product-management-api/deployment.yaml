@@ -19,4 +19,4 @@ spec:
           image: bank20baht/product-management-api:v0.0.2
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8000
+            - containerPort: 8080
