@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: product-management-api
+  name: product-management-web
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/bank20baht/product-management-service-gitops
-    path: app/product-management-api
+    path: app/product-management-web
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
