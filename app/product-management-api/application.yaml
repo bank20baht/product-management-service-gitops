@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: product-management-api
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/bank20baht/product-management-service-gitops
+    path: apps/product-management-api
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: frontend
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
