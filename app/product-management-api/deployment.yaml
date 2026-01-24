@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: product-management-api
-          image: bank20baht/product-management-api:v0.0.2
+          image: bank20baht/product-management-api:v0.0.4
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
@@ -25,3 +25,7 @@ spec:
               value: "Development"
             - name: ASPNETCORE_HTTP_PORTS
               value: "8080"
+            - name: MS_SQL_URL
+              value: Server=192.168.1.41,1433;Database=FASME;User Id=SA;Password=B&S#b%1|24?T;TrustServerCertificate=True;
+            - name: CORS_ORIGINS
+              value: https://product-management-web.20baht.com
