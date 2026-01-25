@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: product-management-web
-          image: bank20baht/product-management-web:v0.1.0
+          image: bank20baht/product-management-web:v1.0.0
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
