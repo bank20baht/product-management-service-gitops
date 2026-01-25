@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: product-management-api
-          image: bank20baht/product-management-api:v1.0.1
+          image: bank20baht/product-management-api:v1.0.2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
