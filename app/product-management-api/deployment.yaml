@@ -26,6 +26,6 @@ spec:
             - name: ASPNETCORE_HTTP_PORTS
               value: "8080"
             - name: MS_SQL_URL
-              value: Server=192.168.1.41,1433;Database=FASME;User Id=SA;Password=B&S#b%1|24?T;TrustServerCertificate=True;
+              value: Server=192.168.1.35,1433;Database=FASME;User Id=SA;Password=B&S#b%1|24?T;TrustServerCertificate=True;
             - name: CORS_ORIGINS
               value: https://product-management-web.20baht.com,http://localhost:4200
